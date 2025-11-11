@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday Neha — Made with Love by Nityanand</title>
+  <link rel="preconnect" href="style.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" href="birthday_song.mp3" as="audio" />
+  <link rel="preload" href="aman_voice.mp3" as="audio" />
+</head>
+<body>
+  <!-- Soft gradient glow background layers -->
+  <div class="bg-gradient"></div>
+  <div class="bg-sparkles"></div>
+
+  <!-- Floating decorations -->
+  <div class="float-layer">
+    <!-- Balloons -->
+    <div class="balloon b1"></div>
+    <div class="balloon b2"></div>
+    <div class="balloon b3"></div>
+    <div class="balloon b4"></div>
+    <!-- Hearts -->
+    <div class="heart h1"></div>
+    <div class="heart h2"></div>
+    <div class="heart h3"></div>
+    <!-- Stars -->
+    <div class="star s1"></div>
+    <div class="star s2"></div>
+    <div class="star s3"></div>
+    <div class="star s4"></div>
+  </div>
+
+  <!-- Confetti canvas -->
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <!-- Opening section -->
+  <header class="hero" role="banner">
+    <h1 class="hero-title">🎉 Happy Birthday <span class="name">Neha</span>! 🎂</h1>
+    <p class="hero-subtitle">You’re truly special — made with love by Nityanand 💖</p>
+  </header>
+
+  <!-- Controls -->
+  <section class="controls" aria-label="Interactive section">
+    <button id="playSongBtn" class="btn glow" aria-pressed="false" aria-label="Play birthday song">
+      🎵 Play Birthday Song
+    </button>
+    <button id="openMessageBtn" class="btn glow" aria-label="Open Aman’s voice message">
+      💌 From Nityanand ❤
+    </button>
+
+    <!-- Audio elements (hidden) -->
+    <audio id="bgSong" src="birthday_song.mp3" loop preload="auto"></audio>
+    <audio id="voiceMsg" src="aman_voice.mp3" preload="auto"></audio>
+  </section>
+
+  <!-- Slideshow -->
+  <section class="slideshow" aria-label="Photo slideshow">
+    <div class="slide-frame">
+      <figure class="slide active">
+        <img src="photo1.jpg" alt="Neha smiling" />
+        <figcaption>Your smile makes everything brighter 💫</figcaption>
+      </figure>
+      <figure class="slide">
+        <img src="photo2.jpg" alt="Neha being joyful" />
+        <figcaption>Keep shining always 🌷</figcaption>
+      </figure>
+      <figure class="slide">
+        <img src="photo3.jpg" alt="Neha, one in a million" />
+        <figcaption>You’re one in a million 💕</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Popup: Aman’s voice + text wish -->
+  <div id="messagePopup" class="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle" aria-hidden="true">
+    <div class="popup-card">
+      <button class="popup-close" id="closePopupBtn" aria-label="Close message">✖</button>
+      <h2 id="popupTitle">Nityanand’s message for you</h2>
+      <div class="popup-audio">
+        <button id="playVoiceBtn" class="btn small glow" aria-pressed="false">▶ Play Voice</button>
+        <div class="audio-progress">
+          <div class="bar" id="voiceBar"></div>
+        </div>
+      </div>
+      <p class="wish-text">
+        Happy Birthday, Neha! From day one, your kindness and smile have lit up every corner of my world.
+        Today is all about celebrating you — your heart, your laughter, your magic.
+        I’m proud of you, cheering for you, and grateful to have you in my life.
+        May your year be full of soft sunrises, sweet surprises, and every little dream coming true. 💖
+      </p>
+      <div class="popup-sparkle"></div>
+    </div>
+  </div>
+
+  <!-- Final message -->
+  <footer class="final-message" aria-live="polite">
+    <p class="final-text">Made with love and smiles by Nityanand — because you deserve all the happiness in the world 💫</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
