@@ -1,4 +1,4 @@
-# 🎉 Happy Birthday
+# 🎉 Happy Birthday Neha
 
 An interactive, beautifully animated celebration experience featuring dynamic confetti, photo gallery, background music, and personalized voice messages to make special moments truly unforgettable.
 
@@ -83,4 +83,4 @@ Works best on:
 
 ---
 
-💕 *Made with love for someone very special*
+💕 *Made with love by Nityanand for someone very special*
